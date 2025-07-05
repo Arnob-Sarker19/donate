@@ -78,13 +78,14 @@
         currency: 'BDT',
         tran_id: 'donate_' + Math.floor(Math.random() * 99999),
         desc: 'Donation',
-        success_url: 'https://yourwebsite.com/success.html',
-        fail_url: 'https://yourwebsite.com/fail.html',
-        cancel_url: 'https://yourwebsite.com/cancel.html'
+        success_url: 'https://donate-lemon-five.vercel.app/success.html',
+        fail_url: 'https://donate-lemon-five.vercel.app/fail.html',
+        cancel_url: 'https://donate-lemon-five.vercel.app/cancel.html'
       };
 
       for (const key in data) {
         const input = document.createElement('input');
+
         input.type = 'hidden';
         input.name = key;
         input.value = data[key];
